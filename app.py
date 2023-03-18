@@ -57,7 +57,7 @@ c1,c2,c3,c4,c5 = st.columns([1,2,2,2,1], gap='large')
 
 searchFor = c2.selectbox('Select your movie Title', [''] + sorted(df_movies['title'].unique()))
 
-thresh = c3.number_input('Enter minimum percentage (%) similarity you want',min_value=0, max_value=100, value=10)
+thresh = c3.number_input('Minimum Percent similarity',min_value=0, max_value=100, value=10)
 
 thresh = thresh/100
 
